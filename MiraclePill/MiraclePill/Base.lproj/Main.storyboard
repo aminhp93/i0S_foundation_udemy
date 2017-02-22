@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,22 +19,87 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="MKV-QD-61m">
-                                <rect key="frame" x="142" y="99" width="90" height="90"/>
+                                <rect key="frame" x="162" y="99" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Qpj-Qd-ngY"/>
+                                    <constraint firstAttribute="height" constant="90" id="sOc-h1-Jqp"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yln-sl-9Hh">
+                                <rect key="frame" x="91" y="209" width="232" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="iIu-IJ-oi8"/>
+                                    <constraint firstAttribute="height" constant="54" id="meH-iX-zV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-yF-GjF">
+                                <rect key="frame" x="185" y="269" width="45" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Idb-6y-cdn"/>
+                                    <constraint firstAttribute="height" constant="42" id="o6K-X3-ZYE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ben-H1-7RB">
+                                <rect key="frame" x="60" y="329" width="294" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ciN-5l-CAv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXR-bW-kvo">
+                                <rect key="frame" x="60" y="338" width="294" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="dcj-JZ-aks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqJ-QD-Nd8">
+                                <rect key="frame" x="60" y="403" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aMd-Sv-k6w"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MKV-QD-61m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="LKB-gN-XyC"/>
-                            <constraint firstItem="MKV-QD-61m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAY-Bu-iTs"/>
+                            <constraint firstItem="WXR-bW-kvo" firstAttribute="top" secondItem="ben-H1-7RB" secondAttribute="top" constant="9" id="4Rm-Ye-spf"/>
+                            <constraint firstItem="5U0-yF-GjF" firstAttribute="top" secondItem="yln-sl-9Hh" secondAttribute="top" constant="60" id="4UJ-93-jCS"/>
+                            <constraint firstItem="yln-sl-9Hh" firstAttribute="top" secondItem="MKV-QD-61m" secondAttribute="top" constant="110" id="EmW-fi-dvk"/>
+                            <constraint firstItem="MKV-QD-61m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KO1-RT-geg"/>
+                            <constraint firstItem="MKV-QD-61m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="P0k-Qt-VhB"/>
+                            <constraint firstItem="WXR-bW-kvo" firstAttribute="leading" secondItem="ben-H1-7RB" secondAttribute="leading" id="Qtp-dw-QBn"/>
+                            <constraint firstItem="dqJ-QD-Nd8" firstAttribute="top" secondItem="WXR-bW-kvo" secondAttribute="top" constant="65" id="RC0-p1-Ayp"/>
+                            <constraint firstItem="yln-sl-9Hh" firstAttribute="centerX" secondItem="MKV-QD-61m" secondAttribute="centerX" id="Vow-Ie-bs5"/>
+                            <constraint firstItem="WXR-bW-kvo" firstAttribute="trailing" secondItem="ben-H1-7RB" secondAttribute="trailing" id="Wn6-hy-UdS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ben-H1-7RB" secondAttribute="trailing" constant="40" id="cW6-mD-jtj"/>
+                            <constraint firstItem="ben-H1-7RB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="f6o-oQ-iQH"/>
+                            <constraint firstItem="5U0-yF-GjF" firstAttribute="centerX" secondItem="yln-sl-9Hh" secondAttribute="centerX" id="fbM-cH-Khw"/>
+                            <constraint firstItem="dqJ-QD-Nd8" firstAttribute="leading" secondItem="WXR-bW-kvo" secondAttribute="leading" id="k5f-XN-nSW"/>
+                            <constraint firstItem="ben-H1-7RB" firstAttribute="centerX" secondItem="5U0-yF-GjF" secondAttribute="centerX" id="kFu-2Y-ezr"/>
+                            <constraint firstItem="dqJ-QD-Nd8" firstAttribute="trailing" secondItem="WXR-bW-kvo" secondAttribute="trailing" id="kYL-UT-Rj2"/>
+                            <constraint firstItem="ben-H1-7RB" firstAttribute="top" secondItem="5U0-yF-GjF" secondAttribute="top" constant="60" id="vs9-8Q-vCo"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="136.14130434782609"/>
         </scene>
     </scenes>
     <resources>
